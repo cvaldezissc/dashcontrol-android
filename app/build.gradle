@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 repositories {
     mavenLocal()
@@ -7,7 +9,7 @@ repositories {
 
 android {
     compileSdkVersion 27
-//    buildToolsVersion "27.0.3"
+
     defaultConfig {
         applicationId "com.dash.dashapp"
         minSdkVersion 21
@@ -101,9 +103,7 @@ dependencies {
     implementation 'io.github.microutils:kotlin-logging:1.5.9'
 
     implementation project(':dashwalletkit')
-    implementation 'org.dashj:dashj-core:0.15-SNAPSHOT'
+    implementation 'org.dashj:dashj-core:0.15.3'
 }
 
 apply plugin: 'com.google.gms.google-services'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'

@@ -31,13 +31,13 @@ dependencies {
 
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'io.github.microutils:kotlin-logging:1.5.9'
 
     implementation 'org.greenrobot:eventbus:3.1.1'
 
     // DashJ
-    implementation 'org.dashj:dashj-core:0.15-SNAPSHOT'
+    implementation 'org.dashj:dashj-core:0.15.3'
     implementation 'org.slf4j:slf4j-api:1.7.25'
     implementation('com.github.tony19:logback-android-classic:1.1.1-6') {
         exclude(group: 'com.google.android', module: 'android')
